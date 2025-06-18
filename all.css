@@ -1,4 +1,4 @@
-*{
+* {
         font-family: Arial, sans-serif;
     }
 
@@ -19,7 +19,7 @@
         left: 100px;
     }
 
-    h2, p {
+    p {
         color: green;
     }
 
@@ -81,6 +81,7 @@
 
     section{
         height: 100vh;
+        text-align: center;
     }
     #page1{
         background:  #0000FF;
@@ -96,4 +97,66 @@
     }
     #page5{
         background: #FFC0CB;
+    }
+
+    .flex-contant{
+        display: flex;
+        background-color: bisque;
+        height: 100vh;
+        border: 3px solid brown;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex-contant div{
+        background-color: aqua;
+        border: 2px solid blue;
+        height: 100px;
+        width: 100px;
+    }
+    .two{
+        /* flex-grow: 2; */
+        flex-shrink: 2;
+    }
+    .flex-content{
+        display: flex;
+        background-color: aquamarine;
+        height: 10vh;
+        justify-content: space-evenly;
+        justify-items: end;
+        align-items: center;
+    }
+    a{
+        color: black;
+        text-decoration-line: none;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100px 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+        gap: 5px;
+        justify-content: center;
+    }
+    .grid-container div{
+        border: 2px solid green;
+        background-color: aquamarine;
+        align-content: center;
+        text-align: center;
+    }
+    .box1{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .box2{
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .box4
+    {
+        grid-column-start: 4;
+    }
+    .box5{
+        grid-row-start: 3;
+        grid-column-start: 2;
+        grid-column-end: 5;
     }
